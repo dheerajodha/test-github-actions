@@ -8,11 +8,7 @@ jobs:
             - uses: actions/setup-node@v2
               with:
                 node-version: 14
-<<<<<<< HEAD
             - name: Build the Project
               run: yarn build
             - name: Setup Finish
               run: echo "Hurray!!!!"
-=======
-            - run: node -v
->>>>>>> 138a8bd50c73b244d084e2f92eb8000e99f313b0
