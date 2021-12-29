@@ -1,4 +1,4 @@
-viname: My first GitHub Action
+name: My first GitHub Action
 on: [push]
 jobs:
     build-app:
