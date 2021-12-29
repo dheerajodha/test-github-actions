@@ -4,5 +4,15 @@ jobs:
     build-app:
         runs-on: ubuntu-latest
         steps:
+<<<<<<< HEAD
             - uses: actions/checkout@v2
             - run: tree
+=======
+            - run: echo "Hello World!!!"
+            - run: echo "this is step number 2"
+    print-hello-world2:
+        runs-on: ubuntu-latest
+        steps:
+            - run: echo "Hello World!!!"
+            - run: echo "this is step number 2"
+>>>>>>> 5fe77cdfc4ea3abc03f496307b9b569847869c81
