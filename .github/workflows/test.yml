@@ -12,7 +12,6 @@ jobs:
               run: yarn
             - name: Build the Project
               run: yarn build
-<<<<<<< HEAD
             - name: Sets the vercel env
               run: |
                 cd build
@@ -23,12 +22,3 @@ jobs:
               run: yarn deploy
             - name: Setup Finish
               run: echo "Hurray!!!!"
-=======
-            - name: Deploying the project
-              env:
-                VERCEL_ORG_ID: D2jlKAj7uzrYl4oLLkpbttSt
-                VERCEL_PROJECT_D: prj_RYd0ASkxiMwNgVsYOuivGe84c2Yn
-              run: yarn deploy
-            - name: Setup Finish
-              run: echo "Hurray!!!!"
->>>>>>> c0814392a819364f39e5b1004b5f7e54441d8a57
