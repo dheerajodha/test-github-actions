@@ -8,16 +8,9 @@ jobs:
             - uses: actions/setup-node@v2
               with:
                 node-version: 14
-<<<<<<< HEAD
             - name: Install node_modules
               run: yarn
             - name: Build the Project
               run: yarn build
             - name: Setup Finish
               run: echo "Hurray!!!!"
-=======
-            - name: Build the Project
-              run: yarn build
-            - name: Setup Finish
-              run: echo "Hurray!!!!"
->>>>>>> 7b04b990f7542bd644fd7e7b99f53211be5355a0
