@@ -18,4 +18,8 @@ jobs:
                 VERCEL_PROJECT_D: prj_RYd0ASkxiMwNgVsYOuivGe84c2Yn
               run: yarn deploy
             - name: Setup Finish
+<<<<<<< HEAD
               run: echo "Hurray!!!!"
+=======
+              run: echo "Hurray!!!!"
+>>>>>>> a1c931c5ddd92a99e497fd53df64baf688f9c3aa
