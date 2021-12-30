@@ -4,7 +4,7 @@ jobs:
     build-app:
         runs-on: ubuntu-latest
         env:
-            VERCEL_TOKEN_ID: ${{ secrets.VERCEL_TOKEN_ID }}
+            VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
             VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
             VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
         steps:
@@ -27,11 +27,7 @@ jobs:
               run: yarn deploy
             - name: Setup Finish
 <<<<<<< HEAD
-<<<<<<< HEAD
               run: echo "Hurray!!!!"
 =======
               run: echo "Hurray!!!!"
 >>>>>>> b6cab4d1ac6b12d1444fcec3a716223f17c09e03
-=======
-              run: echo "Hurray!!!!"
->>>>>>> 2d0b5b94376abd3ebc1963a0faea3cfd67fcc9e8
