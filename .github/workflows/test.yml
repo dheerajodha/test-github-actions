@@ -3,7 +3,7 @@ on: [push]
 jobs:
     buildApp:
         runs-on: ubuntu-latest
-        output:
+        outputs:
             text: ${{ steps.finished.outputs.text }}
         env:
             VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
