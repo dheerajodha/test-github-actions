@@ -27,7 +27,11 @@ jobs:
               run: yarn deploy
             - name: Setup Finish
 <<<<<<< HEAD
+<<<<<<< HEAD
               run: echo "Hurray!!!!"
 =======
               run: echo "Hurray!!!!"
 >>>>>>> b6cab4d1ac6b12d1444fcec3a716223f17c09e03
+=======
+              run: echo "Hurray!!!!"
+>>>>>>> 2d0b5b94376abd3ebc1963a0faea3cfd67fcc9e8
