@@ -3,6 +3,10 @@ on: [push]
 jobs:
     build-app:
         runs-on: ubuntu-latest
+        env:
+            VERCEL_TOKEN_ID: ${{ secrets.VERCEL_TOKEN_ID }}
+            VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+            VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
         steps:
             - uses: actions/checkout@v2
             - uses: actions/setup-node@v2
@@ -18,8 +22,12 @@ jobs:
                 mkdir .vercel
                 cd .vercel
                 touch project.json
-                echo '{"projectId":"prj_RYd0ASkxiMwNgVsYOuivGe84c2Yn","orgId":"D2jlKAj7uzrYl4oLLkpbttSt"}' > project.json
+                echo "{\"projectId\":\"$VERCEL_PROJECT_ID\",\"orgId\":\"$VERCEL_ORG_ID\"}" > project.json
             - name: Deploying the project
               run: yarn deploy
             - name: Setup Finish
+<<<<<<< HEAD
               run: echo "Hurray!!!!"
+=======
+              run: echo "Hurray!!!!"
+>>>>>>> b6cab4d1ac6b12d1444fcec3a716223f17c09e03
